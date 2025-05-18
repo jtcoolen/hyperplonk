@@ -30,7 +30,7 @@ use ark_std::cmp::max;
 /// NOTE: here coeff is a signed integer, instead of a field element
 #[derive(Clone, Debug, Default, PartialEq, Eq)]
 pub struct CustomizedGates {
-    pub(crate) gates: Vec<(i64, Option<usize>, Vec<usize>)>,
+    pub gates: Vec<(i64, Option<usize>, Vec<usize>)>,
 }
 
 impl CustomizedGates {
