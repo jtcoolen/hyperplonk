@@ -11,15 +11,15 @@ use errors::HyperPlonkErrors;
 use subroutines::{pcs::prelude::PolynomialCommitmentScheme, poly_iop::prelude::PermutationCheck};
 use witness::WitnessColumn;
 
-mod custom_gate;
-mod errors;
-mod mock;
+pub mod custom_gate;
+pub mod errors;
+pub mod mock;
 pub mod prelude;
-mod selectors;
-mod snark;
-mod structs;
-mod utils;
-mod witness;
+pub mod selectors;
+pub mod snark;
+pub mod structs;
+pub mod utils;
+pub mod witness;
 
 /// A trait for HyperPlonk SNARKs.
 /// A HyperPlonk is derived from ZeroChecks and PermutationChecks.
