@@ -19,6 +19,10 @@ pub struct WitnessRow<F: PrimeField>(pub(crate) Vec<F>);
 pub struct WitnessColumn<F: PrimeField>(pub(crate) Vec<F>);
 
 impl<F: PrimeField> WitnessColumn<F> {
+    pub fn new(witness: Vec<F>) -> Self {
+        Self(witness)
+    }
+
     /// the number of variables of the multilinear polynomial that presents a
     /// column.
     pub fn get_nv(&self) -> usize {
