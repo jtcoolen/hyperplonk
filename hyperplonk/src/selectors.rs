@@ -16,7 +16,7 @@ pub struct SelectorRow<F: PrimeField>(pub(crate) Vec<F>);
 
 /// A column of selectors of length `#constraints`
 #[derive(Debug, Clone, PartialEq, Eq, Default)]
-pub struct SelectorColumn<F: PrimeField>(pub(crate) Vec<F>);
+pub struct SelectorColumn<F: PrimeField>(pub Vec<F>);
 
 impl<F: PrimeField> SelectorColumn<F> {
     /// the number of variables of the multilinear polynomial that presents a
